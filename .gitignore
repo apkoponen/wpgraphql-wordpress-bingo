@@ -1,0 +1,10 @@
+.idea
+frontend
+frontend-demo
+src/*
+!src/wp-content/
+src/wp-content/*
+!src/wp-content/plugins/
+src/wp-content/plugins/*
+!src/wp-content/plugins/bingo-plugin/
+!src/wp-content/plugins/bingo-plugin/bingo-plugin.php

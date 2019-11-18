@@ -1,0 +1,140 @@
+[
+    {
+        "key": "group_5dbcc9b00c075",
+        "title": "Bingo",
+        "fields": [
+            {
+                "key": "field_5dbcc9c1b31d8",
+                "label": "Terms",
+                "name": "terms",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "show_in_graphql": 1,
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5dbcca00b31d9",
+                        "label": "Term",
+                        "name": "term",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5dbd450a2c6de",
+                "label": "Players",
+                "name": "players",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "bingo_players"
+                ],
+                "taxonomy": "",
+                "filters": [
+                    "search"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "id"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "bingo_games"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5dbd48c02023c",
+        "title": "Player",
+        "fields": [
+            {
+                "key": "field_5dbd48c762926",
+                "label": "Team",
+                "name": "team",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "bingo_teams"
+                ],
+                "taxonomy": "",
+                "filters": [
+                    "search"
+                ],
+                "elements": "",
+                "min": 1,
+                "max": 1,
+                "return_format": "id"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "bingo_players"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]
